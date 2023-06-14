@@ -5,11 +5,64 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { Route, Routes } from 'react-router-dom';
 import Rutas from './routes/Routes';
+import RegistroHorario from './formularios/registrarHorarios';
+import FormularioRegistroCliente from './formularios/registrarDatosCliente';
+import FormularioRegistroCuentaUsuario from './formularios/registrarDatosU';
+import RegistroVehiculo from './formularios/registrarVehiculo';
+import FormularioRegistroPersonal from './formularios/registrarDatosDelPersonal';
+import RegistroZonaParqueo from './formularios/registrarZparqueo';
+import Login from './login';
+
+import RegistroHorarioParqueo from './forlumarios2/registroPar';
+import RegistroConvocatoria from './forlumarios2/estadoPar';
+import FormularioRegistroBoleta from './forlumarios2/registrarBoleta';
+import RegistroBoletaManual from './forlumarios2/pagoEfec';
+
+import SolicitarSitioParqueo from './formularios/solicitarSitioParqueo';
+import SolicitudBoleta from './forlumarios2/revicionSolicitudPago';
+import ListaUsuarios from './forlumarios2/lista de usuarios';
+import NavBarMenu from './components/NavbarMenu';
+import NavBarOffAdministrador from './components/NavbarOffAdministrador';
+import NavBarOffCliente from './components/NavbarOffCliente';
+import NavBarOffOperador from './components/NavbarOffOperador';
+import NavBarOffGuardia from './components/NavbarOffGuardia';
+import NavBarOffUsuarioComun from './components/NavbarOffUsuarioComun';
+import InfoConvocatoria from './components/InfoConvocatoria';
+import TablaBoleta from './components/TablaBoleta';
+import TablaVehiculo from './components/TablaVehiculo';
+import MensajeA from './components/Mensaje';
+import TablaMensaje from './components/TablaMensaje';
+import TablaMiBoleta from './components/TablaMiBoleta';
+import TablaBoletaManual from './components/TablaBoletaManual';
+import TablaMensajeOperador from './components/TablaMensajeOperador';
+import TablaMensajeGuardia from './components/TablaMensajeGuardia';
+import AsignarSitiosParqueo from './formularios/aignarSitiosParqueo';
+import ActuliazarDatos from './formularios/actualizarDatosCliente';
+import TablaConvocatoria from './components/TablaConvocatoria';
+import TablaHorarioParqueo from './components/TablaHorarioParqueo';
+import TablaZona from './components/TablaZona';
+import TablaUser from './components/TablaUser';
+import TablaUserCliente from './components/TablaUserCliente';
+import TablaUserOperador from './components/TablaUserOperador';
+import TablaUserGuardia from './components/TablaUserGuardia';
+import TablaHorarioPersonal from './components/TablaHorarioPersonal';
+import TablaUserGuardiaSE from './components/TablaUserGuardiaSE';
+import TablaMiVehiculo from './components/TablaMiVehIculo';
+import MensajeACliente from './components/MensajeACliente';
+import MensajeAGuardia from './components/MensajeAGuardia';
+import MensajeAOperador from './components/MensajeAOperador';
+import TablaUserClienteSE from './components/TablaUserClienteSE';
+import TablaVehiculoSE from './components/TablaVehiculoSE';
+import RegistrarBoletaQr from './forlumarios2/registrarBoletaQR';
+import TablaBoletaQR from './components/TablaBoletaQR';
+import TablaBoletaSE from './components/TablaBoletaSE';
+import TablaBoletaQRSE from './components/TablaBoletaQRSE';
+import SolicitudPagoQr from './forlumarios2/solicitudPagoQr';
+import ListaUsuariosParqueo from './forlumarios2/listaUsuariosParqueos';
 
 function App() {
   return (
     <Routes>
-      <Route path="/*" element={<Rutas />} />
       <Route path="/RegistroCliente" element={<FormularioRegistroCliente />} />
       <Route path="/ListaUsuarios" element={<ListaUsuarios />} />
 
